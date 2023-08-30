@@ -110,7 +110,7 @@ exports.port = process.env.PORT || 9001;
 /**
  * Should we suppress Error messages from being in Pad Contents
  */
-exports.suppressErrorsInPadText = false;
+exports.suppressErrorsInPadText = true;
 
 /**
  * The SSL signed server key and the Certificate Authority's own certificate
