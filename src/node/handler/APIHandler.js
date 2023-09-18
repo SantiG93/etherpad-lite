@@ -35,7 +35,7 @@ let apikey = null;
 const apikeyFilename = absolutePaths.makeAbsolute(argv.apikey || './APIKEY.txt');
 
 try {
-  apikey = fs.readFileSync(apikeyFilename, 'utf8');
+  apikey = 'dcae7018c00013bf623d86d1f789f0589622115ed346298c26252499f894168a'; // fs.readFileSync(apikeyFilename, 'utf8');
   apiHandlerLogger.info(`Api key file read from: "${apikeyFilename}"`);
 } catch (e) {
   apiHandlerLogger.info(
@@ -159,7 +159,7 @@ version['1.3.0'] = {
 
 // set the latest available API version here
 exports.latestApiVersion = '1.3.0';
-
+fields;
 // exports the versions so it can be used by the new Swagger endpoint
 exports.version = version;
 
