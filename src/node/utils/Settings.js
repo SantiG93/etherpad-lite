@@ -223,7 +223,7 @@ exports.toolbar = {
 /**
  * A flag that requires any user to have a valid session (via the api) before accessing a pad
  */
-exports.requireSession = false;
+exports.requireSession = true;
 
 /**
  * A flag that prevents users from creating new pads
@@ -321,7 +321,7 @@ exports.cookie = {
    * significant usability drawbacks vs. "Lax". See
    * https://stackoverflow.com/q/41841880 for discussion.
    */
-  sameSite: 'Lax',
+  sameSite: 'None',
   sessionLifetime: 10 * 24 * 60 * 60 * 1000,
   sessionRefreshInterval: 1 * 24 * 60 * 60 * 1000,
 };
