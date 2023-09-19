@@ -35,7 +35,7 @@ let apikey = null;
 const apikeyFilename = absolutePaths.makeAbsolute(argv.apikey || './APIKEY.txt');
 
 try {
-  apikey = 'dcae7018c00013bf623d86d1f789f0589622115ed346298c26252499f894168a'; // fs.readFileSync(apikeyFilename, 'utf8');
+  apikey = fs.readFileSync(apikeyFilename, 'utf8');
   apiHandlerLogger.info(`Api key file read from: "${apikeyFilename}"`);
 } catch (e) {
   apiHandlerLogger.info(

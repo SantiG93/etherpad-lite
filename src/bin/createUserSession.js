@@ -19,7 +19,7 @@ const supertest = require('supertest');
   const api = supertest(`http://${settings.ip}:${settings.port}`);
 
   const filePath = path.join(__dirname, '../../APIKEY.txt');
-  const apikey = "dcae7018c00013bf623d86d1f789f0589622115ed346298c26252499f894168a" // fs.readFileSync(filePath, {encoding: 'utf-8'});
+  const apikey = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
   let res;
 
