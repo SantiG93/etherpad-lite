@@ -276,4 +276,6 @@ exports.exit = async (err = null) => {
 };
 
 if (require.main === module) exports.start();
-if (typeof(PhusionPassenger) !== 'undefined') exports.start();
+if (typeof (PhusionPassenger) !== 'undefined') exports.start();
+
+//
